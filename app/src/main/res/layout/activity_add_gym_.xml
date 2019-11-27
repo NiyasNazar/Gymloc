@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="25dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Add_gym_Activity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_gymname"
+            android:hint="Enter Gym Name "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_location"
+            android:hint="Enter Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_regfees"
+            android:hint="Enter Registration Fees "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_monthlyfees"
+            android:hint="Enter Monthly Fees "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:text="Addphoto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+     android:onClick="Add_gym"
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
