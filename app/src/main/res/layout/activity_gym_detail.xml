@@ -1,23 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:fillViewport="true"
     android:layout_height="match_parent"
     tools:context=".Gym_detailActivity">
+<RelativeLayout
+    android:layout_marginTop="15dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<ImageView
+    android:id="@+id/imvgym"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/ssppp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="sadjsdshdsajdhjasd"
+        android:layout_below="@id/imvgym"
+        android:textSize="16sp"
+        android:id="@+id/tv_gymname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/tv_gymname"
+        android:textSize="16sp"
+        android:id="@+id/tv_gymloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/tv_gymloc"
+        android:textSize="16sp"
+        android:id="@+id/tv_gyregfees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/tv_gyregfees"
+        android:textSize="16sp"
+        android:id="@+id/tv_monthlyfees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@id/tv_gyregfees"
+        android:textSize="16sp"
+        android:id="@+id/tv_monthlyfeess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
-        android:layout_alignParentBottom="true"
+  android:layout_alignParentBottom="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
+        <fragment
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
         <Button
+
             android:id="@+id/b1"
             android:layout_width="match_parent"
             android:text="GetDirection"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-
 </RelativeLayout>
+</ScrollView>
